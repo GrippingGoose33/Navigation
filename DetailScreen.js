@@ -5,7 +5,7 @@ function DetailScreen({navigation}) {
     return (
         <View style = {{flex:1, justifyContent:'center', alignItems:'center', backgroundColor: "green"}}>
             <Text>Details Screen</Text>
-            <View>
+            <View style = {styles.containerButton}>
              <Button 
                 title="Atras"
                 onPress={() => navigation.goBack()}
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         padding: 5,
 
         width: 300,
-        height: 100,
+        height: 100,    
     }
 })
 
