@@ -23,4 +23,19 @@ function DetailScreen({navigation}) {
     );
 }
 
+const styles = StyleSheet.create({
+    containerButton: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        backgroundColor: 'gray',
+        
+        margin: 20,
+        padding: 5,
+
+        width: 300,
+        height: 100,
+    }
+})
+
 export default DetailScreen;
