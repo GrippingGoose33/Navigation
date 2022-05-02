@@ -9,10 +9,9 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Detalle'>
+      <Stack.Navigator initialRouteName='Detail'>
         <Stack.Screen name="Home" component={HomeScreen}/>
         <Stack.Screen name="Detail" component={DetailScreen} options={{title:"Tarea"}}/>
-
       </Stack.Navigator>
     </NavigationContainer>
   );
