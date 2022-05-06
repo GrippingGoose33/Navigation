@@ -10,6 +10,15 @@ function DetailScreen({navigation}) {
             <Text>Screen: {id}</Text>
             <Text>Description: {description}</Text>
 
+            <Button
+                title="Atras"
+                onPress={() => navigation.goBack()}
+            />
+            <Button
+                title="Home"
+                onPress={() => navigation.navigate('Home')}
+            />
+
         </View>
     );
 }

@@ -6,9 +6,7 @@ import Box from './Component/Box'
 
 const boxes = new Array(10).fill(null).map((v, i) => i+1);
 
-function MenuScreen({route, navigation}) {
-
-    //const{id, description} = route.params;
+function MenuScreen({navigation}) {
 
     return (
         <View style={styles.containerBox}>
