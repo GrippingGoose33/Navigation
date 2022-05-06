@@ -28,11 +28,9 @@ function MenuScreen({navigation}) {
             </View>
 
             <View  style = {styles.containerBootom}>
-                <Box>
-                    <Button
-                        title="Atras"
-                    />
-                </Box>
+                <Button
+                    title="Atras"
+                />
             </View>
 
         </View>
