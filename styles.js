@@ -16,6 +16,17 @@ export default StyleSheet.create({
         backgroundColor: 'ghostwhite',
     },
 
+    box: {
+        width:100,
+        height:100,
+        justifyContent: 'center',
+        alignItems: 'center',
+        //alignSelf: 'stretch',
+        borderWidth: 3,
+        backgroundColor: '  #ff5131',
+        margin: 10,
+    },  
+
     text: {
         marginBottom: 10,
     }

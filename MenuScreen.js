@@ -9,15 +9,14 @@ const boxes = new Array(10).fill(null).map((v, i) => i+1);
 function MenuScreen({navigation}) {
 
     return (
-        <View style={styles.containerBox}>
-            <Text style={styles.text}>Menu</Text>
-            <View>
+        <View>
+            <Text style={styles.containerBox}>
             {
                 boxes.map(v => (
                 <Box key={v}>
                     Tarea#{v}
                     <Button
-                        title="Ir a Detalles"
+                        title="Detalles"
                         onPress={() => navigation.navigate('Details',{
                         id: v,
                         description: 'Descripcion'
@@ -26,7 +25,7 @@ function MenuScreen({navigation}) {
                 </Box>
                 ))
             }
-            </View>
+            </Text>
         </View>
     );
 }
