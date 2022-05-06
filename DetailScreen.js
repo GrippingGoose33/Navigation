@@ -10,7 +10,7 @@ function DetailScreen({/*route*/ navigation}) {
             <Text>Details Screen</Text>
 
             <Text>Screen: </Text>
-            <Text>Description: {description}</Text>
+            <Text>Description: </Text>
 
             <View style = {styles.containerButton}>
                 <Button 

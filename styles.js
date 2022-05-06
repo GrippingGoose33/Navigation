@@ -13,7 +13,7 @@ export default StyleSheet.create({
         flexWrap: 'wrap',
         justifyContent: 'space-around',
         alignItems: 'center',
-        backgroundColor: 'ghostwhite',
+        backgroundColor: '#d50000',
     },
 
     
