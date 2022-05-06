@@ -30,6 +30,7 @@ function MenuScreen({navigation}) {
             <View  style = {styles.containerBootom}>
                 <Button
                     title="Atras"
+                    onPress={() => navigation.navigate('Home')}
                 />
             </View>
 

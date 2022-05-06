@@ -3,7 +3,7 @@ import {StyleSheet, Button, View, Text} from 'react-native';
 
 function DetailScreen({route, navigation}) {
 
-    const {description} = route.param;
+    const {id, description} = route.param;
 
     return (
         <View style = {{flex:1, justifyContent:'center', alignItems:'center', backgroundColor: "green"}}>
