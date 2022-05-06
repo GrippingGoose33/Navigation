@@ -6,21 +6,22 @@ function DetailScreen({route, navigation}) {
     const {id, description} = route.param;
 
     return (
-        <View style = {{flex:1, justifyContent:'center', alignItems:'center', backgroundColor: '#3d5afe'}}>
+        <View style = {{flex:1, justifyContent:'center', alignItems:'center', backgroundColor: "green"}}>
             <Text>Details Screen</Text>
 
             <Text>Screen: {id}</Text>
             <Text>Description: {description}</Text>
 
-            <Button
-                title="Atras"
-                onPress={() => navigation.goBack()}
-            />
-            <Button
-                title="Home"
-                onPress={() => navigation.navigate('Home')}
-            />
-
+            <View style = {styles.containerButton}>
+                <Button 
+                    title="Atras"
+                    onPress={() => navigation.goBack()}
+                />
+                <Button 
+                    title="Home"
+                    onPress={() => navigation.navigate('Home')}
+                />
+            </View>
         </View>
     );
 }
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',
-        backgroundColor: '#8187ff',
+        backgroundColor: '#263238',
         
         margin: 20,
         padding: 5,
