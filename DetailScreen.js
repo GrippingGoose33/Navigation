@@ -6,7 +6,7 @@ function DetailScreen({route, navigation}) {
     const{id, description} = route.params;
 
     return (
-        <View style = {{flex:1, justifyContent:'center', alignItems:'center', backgroundColor: "green"}}>
+        <View style = {{flex:1, justifyContent:'center', alignItems:'center', backgroundColor: '#3d5afe'}}>
             <Text>Details Screen</Text>
 
             <Text>Screen: {id}</Text>
@@ -14,13 +14,15 @@ function DetailScreen({route, navigation}) {
 
             <View style = {styles.containerButton}>
              <Button 
+                color="#212121"
                 title="Tarea 1"
                 onPress={() => navigation.push('Details', {
                     id: 1,
                     description: "Ir de compas"
                 })}
              />
-             <Button 
+             <Button
+                color="#212121" 
                 title="Tarea 2"
                 onPress={() => navigation.push('Details', {
                     id: 2,
@@ -28,6 +30,7 @@ function DetailScreen({route, navigation}) {
                 })}
              />
              <Button 
+                color="#212121"
                 title="Tarea 3"
                 onPress={() => navigation.push('Details', {
                     id: 3,
@@ -65,7 +68,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',
-        backgroundColor: 'gray',
+        backgroundColor: '#8187ff',
         
         margin: 20,
         padding: 5,
