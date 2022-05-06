@@ -18,7 +18,7 @@ function MenuScreen({navigation}) {
                     <Button
                         title="Detalles"
                         onPress={() => navigation.navigate('Details',{
-                        id: v,
+                        id: {v},
                         description: 'Descripcion'
                         })}
                     />
