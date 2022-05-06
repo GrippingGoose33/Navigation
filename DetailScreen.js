@@ -14,6 +14,30 @@ function DetailScreen({route, navigation}) {
 
             <View style = {styles.containerButton}>
              <Button 
+                title="Tarea 1"
+                onPress={() => navigation.push('Details', {
+                    id: 1,
+                    description: "Ir de compas"
+                })}
+             />
+             <Button 
+                title="Tarea 2"
+                onPress={() => navigation.push('Details', {
+                    id: 2,
+                    description: "Jugar"
+                })}
+             />
+             <Button 
+                title="Tarea 3"
+                onPress={() => navigation.push('Details', {
+                    id: 3,
+                    description: "Asistir a clase"
+                })}
+              />
+            </View>
+            
+            <View style = {styles.containerButton}>
+             <Button 
                 title="Atras"
                 onPress={() => navigation.goBack()}
              />
