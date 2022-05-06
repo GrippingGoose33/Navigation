@@ -10,7 +10,7 @@ function MenuScreen({navigation}) {
 
     return (
         <View>
-            <Text style={styles.containerBox}>
+            <View style={styles.containerBox}>
             {
                 boxes.map(v => (
                 <Box key={v}>
@@ -25,7 +25,12 @@ function MenuScreen({navigation}) {
                 </Box>
                 ))
             }
-            </Text>
+            </View>
+
+            <Box style ={{flex: 1, justifyContent:'center', alignItems: 'flex-end'}}>
+
+            </Box>
+
         </View>
     );
 }

@@ -6,7 +6,7 @@ import styles from './styles';
 function HomeScreen({navigation}) {
     return (
         <View style={styles.container}>
-            <Text style={styles.text}><b>Home</b></Text>
+            <Text style={styles.text}>Home</Text>
             <Button 
             title="ir a Menu"
             onPress={() => navigation.navigate('Menu')}
