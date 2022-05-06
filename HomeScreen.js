@@ -8,11 +8,8 @@ function HomeScreen({navigation}) {
         <View style={styles.container}>
             <Text style={styles.text}>Home</Text>
             <Button 
-            title="ir a Detalle"
-            onPress={() => navigation.navigate('Details', {
-                id: 1,
-                description: 'Aqui va la descripción'
-            })}
+            title="ir a Menu"
+            onPress={() => navigation.navigate('Menu')}
             />
         </View>
     );
