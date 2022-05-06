@@ -16,6 +16,20 @@ export default StyleSheet.create({
         backgroundColor: 'ghostwhite',
     },
 
+    
+    containerBootom: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        backgroundColor: '#263238',
+        
+        margin: 20,
+        padding: 5,
+
+        width: 300,
+        height: 100,    
+    },
+
     box: {
         width:100,
         height:100,
