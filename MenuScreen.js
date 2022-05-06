@@ -6,22 +6,27 @@ import Box from './Component/Box'
 
 const boxes = new Array(10).fill(null).map((v, i) => i+1);
 
-function MenuScreen(navigation) {
+function MenuScreen({route, navigation}) {
+
+    const{id, description} = route.params;
+
     return (
         <View style={styles.container}>
             <Text style={styles.text}>Menu</Text>
-            {
+        
+            <StatusBar hidden={false}/>{
                 boxes.map(v => (
                 <Box key={v}>
-                    Tarea#{v}
+                Tarea#{v}
                     <Button
                         title="Ir a Detalles"
                         onPress={() => navigation.navigate('Details',{
                         id: v,
-                        description: Descripcion
+                        description: 'Descripcion'
                         })}
                     />
-                </Box>
+                </Box>    
+
                 ))
             }
         </View>
