@@ -16,9 +16,15 @@ function DetailScreen({navigation}) {
              />
              <Button 
                 title="ir a Detalle"
-                onPress={() => navigation.push('Details')}
+                onPress={() => navigation.navigate('Details')}
               />
             </View>
+
+            <Button
+                title="Inicio"
+                onPress={() => navigation.popToTop()}
+            />
+
         </View>
     );
 }
