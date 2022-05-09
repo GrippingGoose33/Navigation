@@ -2,7 +2,8 @@ import React from 'react';
 import {Button, View, Text } from 'react-native';
 import './styles.js';
 import styles from './styles';
-import Box from './Component/Box'
+import Box from './Component/Box';
+import NavegationBottom from './NavigationBottom';
 
 const boxes = new Array(10).fill(null).map((v, i) => i+1);
 
@@ -12,7 +13,7 @@ const task = [
     {id: 3, description: "Ser programador"},
     {id: 4, description: "Depecion"},
     {id: 5, description: "Existir"},
-    {id: 6, description: "Trabajar"}
+    {id: 6, description: "Trabajar"},
     {id: 7, description: "Tarea"}
 ]
 
@@ -23,35 +24,17 @@ function MenuScreen({navigation}) {
             <View>
             {
                 tasks.map((task, v)=> (
-                <Box key={v}>
-                    Tarea#{task.id}
-                    <Button
-                        color="#455q64"
-                        title="Detalles"
-                        onPress={() => navigation.navigate('Details',{
-                        id: task.id,
-                        description: task.description
-                        })}
-                    />
-                </Box>
+                <Box key={v}
+                id = {task.idd}
+                desctiption = {task.description}
+                />
+
                 ))
             }
             </View>
 
-            <View style={styles.containerNavBottom}>
-            <Button
-                color="#455a64"
-                title="Atras"
-                onPress={() => navigation.goBack()}
-            />
-
-
-            <Button
-                color="#455a64"
-                title="Home"
-                onPress={() => navigation.popToTop()}
-            />
-            </View>
+            <NavegationBottom/>
+    
         </View>
     );
 }
