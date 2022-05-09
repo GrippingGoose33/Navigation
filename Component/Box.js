@@ -1,12 +1,21 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
-import styles from'../styles';
+import {StyleSheet, View, Text, Button} from 'react-native';
 
-const Box = ({children}) => {
+function Box({id, description}) {
 
+    const navigation = useNavigation();
     return (
         <View style={styles.root}>
-            {children}
+            <Text>Tarea#{task.id}</Text>
+                    <Button
+                        color="#455q64"
+                        title="Detalles"
+                        onPress={() => navigation.navigate('Details',{
+                        id: id,
+                        description: description
+                        })}
+                    />
         </View>
     );
 }

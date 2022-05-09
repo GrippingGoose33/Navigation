@@ -22,7 +22,7 @@ function MenuScreen({navigation}) {
         <View style = {styles.root}>
             <View>
             {
-                task.map((task, v)=> (
+                tasks.map((task, v)=> (
                 <Box key={v}>
                     Tarea#{task.id}
                     <Button
