@@ -1,21 +1,11 @@
 import React from 'react';
-import {Button, View, Text } from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import './styles.js';
 import styles from './styles';
 import Box from './Component/Box';
 import NavegationBottom from './NavigationBottom';
+import tasks from './Data/Task';
 
-const boxes = new Array(10).fill(null).map((v, i) => i+1);
-
-const task = [
-    {id: 1, description: "ir de compras"},
-    {id: 2, description: "ir de Chango"},
-    {id: 3, description: "Ser programador"},
-    {id: 4, description: "Depecion"},
-    {id: 5, description: "Existir"},
-    {id: 6, description: "Trabajar"},
-    {id: 7, description: "Tarea"}
-]
 
 function MenuScreen({navigation}) {
 
@@ -33,7 +23,7 @@ function MenuScreen({navigation}) {
             }
             </View>
 
-            <NavegationBottom/>
+            <NavegationBottom navigation={navigation} />
     
         </View>
     );
