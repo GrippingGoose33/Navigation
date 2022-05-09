@@ -1,19 +1,28 @@
 import React from 'react';
-import {Text, View} from 'react-native';
-import PropTypes from 'prop-types';
+import {StyleSheet, View} from 'react-native';
 import styles from'../styles';
 
 const Box = ({children}) => {
 
     return (
-        <View style={styles.box}>
-            <Text style={styles.boxText}>{children}</Text>
+        <View style={styles.root}>
+            {children}
         </View>
     );
 }
 
-Box.propTypes = {
-    children: PropTypes.node.isRequired
-};
+const styles = StyleSheet.create({
+
+    root: {
+        width: 100,
+        height: 100,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "lightgray",
+        borderWidth: 1,
+        borderRadius: 0,
+        margin: 10,
+    }
+})
 
 export default Box;
