@@ -6,21 +6,31 @@ import Box from './Component/Box'
 
 const boxes = new Array(10).fill(null).map((v, i) => i+1);
 
+const task = [
+    {id: 1, description: "ir de compras"},
+    {id: 2, description: "ir de Chango"},
+    {id: 3, description: "Ser programador"},
+    {id: 4, description: "Depecion"},
+    {id: 5, description: "Existir"},
+    {id: 6, description: "Trabajar"}
+    {id: 7, description: "Tarea"}
+]
+
 function MenuScreen({navigation}) {
 
     return (
         <View style = {styles.root}>
             <View>
             {
-                boxes.map(v => (
+                task.map((task, v)=> (
                 <Box key={v}>
-                    Tarea#{v}
+                    Tarea#{task.id}
                     <Button
                         color="#455q64"
                         title="Detalles"
                         onPress={() => navigation.navigate('Details',{
-                        id: v,
-                        description: `Descripcion ${v}`
+                        id: task.id,
+                        description: task.description
                         })}
                     />
                 </Box>

@@ -1,16 +1,16 @@
 import React from 'react';
 import {StyleSheet, Button, View, Text} from 'react-native';
 
-function DetailScreen({/*route*/ navigation}) {
+function DetailScreen({route, navigation}) {
 
-    //const {id, description} = route.param;
+    const {id, description} = route.params;
 
     return (
         <View style = {{flex:1, justifyContent:'center', alignItems:'center', backgroundColor: "green"}}>
             <Text>Details Screen</Text>
 
-            <Text>Screen: </Text>
-            <Text>Description: </Text>
+            <Text>Screen: {id}</Text>
+            <Text>Description: {description}</Text>
 
             <View style = {styles.containerButton}>
                 <Button 
